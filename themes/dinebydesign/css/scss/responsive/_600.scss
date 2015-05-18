@@ -1,0 +1,74 @@
+.intro {
+   .content {
+      h1 {
+         margin-bottom: $padding10;
+      }
+      p {
+         display: none;
+      }
+   }
+}
+.slider {
+   .slide {
+      .content {
+         p {
+            display: none;
+         }
+      }
+   }
+   .bx-controls {
+      .bx-controls-direction {
+      width: 80%;
+      }
+   }
+}
+.designedBox {
+   background-image: none;
+   .content {
+      p {
+         max-width: 100%;
+      }
+   }
+}
+.testimonials {
+   .testimonialsWrapper {
+      .bx-controls {
+         width: 100px;
+      }
+   }
+}
+.caseStudiesBoxesWrapper {
+   .caseStudyBox {
+      float: none;
+      width: 100%;
+      &:nth-child(odd) {
+         margin-right: 0;
+      }
+   }
+}
+.information {
+   .articleInfo {
+      .meta {
+         line-height: 1.5;
+         margin-bottom: $padding10;
+      }
+      .social {
+         span {
+            vertical-align: middle;
+         }
+         a, a:visited {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 0;
+            width: auto;
+            padding: 0 $padding15;
+            height: 40px;
+            line-height: 40px;
+            .svg {
+               margin-right: 0;
+               vertical-align: middle;
+            }
+         }
+      }
+   }
+}

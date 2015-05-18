@@ -1,0 +1,27 @@
+.sidebar {
+   .categoriesBox {
+      padding: $padding70 $padding40 $padding70 $padding40;
+      h2 {
+         font-family: 'Blender Pro Heavy';
+         font-size: $font35;
+         color: $color2;
+         padding-bottom: $padding40;
+      }
+      ul {
+         border-top: 1px solid $color6;
+         li {
+            padding: $padding30 $padding20;
+            border-bottom: 1px solid $color6;
+            a, a:visited {
+               font-family: 'Ubuntu Medium';
+               font-size: $font18;
+               text-transform: uppercase;
+               @include transitionStandardFast();
+               &:hover {
+                  color: $color2;
+               }
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,45 @@
+.intro {
+   .content {
+      bottom: 12%;
+   }
+}
+.statisticsBox {
+   width: 50%;
+   height: 390px;
+   padding-top: 50px;
+}
+.testimonials {
+   &:before {
+      display: none;
+   }
+   .testimonialsWrapper {
+      .testimonial {
+         .content {
+            float: none;
+            max-width: 85%;
+         }
+         .image {
+            display: none;
+         }
+      }
+   }
+}
+footer {
+   .menus {
+      float: none;
+      padding-top: $padding40;
+      ul {
+         &:nth-child(2) {
+            margin-right: 0;
+         }
+         &:nth-child(2) {
+            float: none;
+         }
+         &:nth-child(3), &:nth-child(4) {
+            float: none;
+            display: inline-block;
+            vertical-align: top;
+         }
+      }
+   }
+}

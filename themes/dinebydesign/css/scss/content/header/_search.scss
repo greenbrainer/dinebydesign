@@ -1,0 +1,53 @@
+.search {
+   float: left;
+   vertical-align: top;
+   margin-left: $padding20;
+   background-color: $color20;
+   position: relative;
+   input[type="text"] {
+      width: 152px;
+      height: 69px;
+      color: $color2;
+      border: 0;
+      font: $font16 'Ubuntu Medium';
+      padding: $padding20 $padding50 0 $padding20;
+      text-transform: uppercase;
+      background-color: $color20;
+      &::-webkit-input-placeholder { color: $color2; }
+      &::-moz-placeholder { color: $color2; }
+      &:-ms-input-placeholder { color: $color2; }
+      &:-moz-placeholder { color: $color2; }
+      &:placeholder { color: $color2; }
+      &:focus {
+         &::-webkit-input-placeholder { @include opacity(.7); }
+         &::-moz-placeholder { @include opacity(.7); }
+         &:-ms-input-placeholder { @include opacity(.7); }
+         &:-moz-placeholder { @include opacity(.7); }
+         &:placeholder { @include opacity(.7); }
+      }
+   }
+   input[type="submit"] {
+      font-size: 0;
+      border: 0;
+      width: 11px;
+      height: 16px;
+      background: transparent url(../images/search.svg) no-repeat top left;
+      background-size: contain;
+      position: absolute;
+      bottom: 17px;
+      right: $padding20;
+      cursor: pointer;
+      @include transitionStandard();
+   }
+   input[type="submit"]:hover {
+      @include transform(scale(1.2));
+   }
+}
+.page {
+   .search {
+      background-color: $color20;
+      input[type="text"] {
+         background-color: $color20;
+      }
+   }
+}

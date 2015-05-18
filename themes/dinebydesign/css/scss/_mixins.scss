@@ -1,0 +1,93 @@
+@import 'compass/reset';
+@import 'compass/css3';
+
+@mixin transitionStandard() {
+   @include transition-property(all);
+   @include transition-duration(0.3s);
+   @include transition-timing-function(ease-in-out);
+}
+@mixin transitionStandardFast() {
+   @include transition-property(all);
+   @include transition-duration(0.2s);
+   @include transition-timing-function(ease-in-out);
+}
+@mixin transitionStandardSlow() {
+   @include transition-property(all);
+   @include transition-duration(0.4s);
+   @include transition-timing-function(ease-in-out);
+}
+@mixin transitionStandardUltraSlow() {
+   @include transition-property(all);
+   @include transition-duration(0.7s);
+   @include transition-timing-function(ease-in-out);
+}
+@mixin transitionUnderline() {
+   @include transition-property(all);
+   @include transition-duration(0.3s);
+   @include transition-timing-function(cubic-bezier(0.215, 0.61, 0.355, 1));
+}
+@mixin backgroundImageGradient($first-bg, $second-bg) {
+   background: -webkit-gradient(linear, left top, right top, from($first-bg), to($second-bg));
+   background: -webkit-linear-gradient(top, $first-bg, $second-bg);
+   background: -moz-linear-gradient(top, $first-bg, $second-bg);
+   background: -o-linear-gradient(top, $first-bg, $second-bg);
+   background: -ms-linear-gradient(top, $first-bg, $second-bg);
+   background: linear-gradient(top, $first-bg, $second-bg);
+   background-color: $first-bg;
+}
+@mixin backgroundTransition() {
+   @include transition-property(background-image);
+   @include transition-duration(0.3s);
+   @include transition-timing-function(ease-in-out);
+}
+@mixin svgTransition() {
+   path, line, polygon, circle, rect, ellipse, polyline, text {
+      @include transitionStandard();
+   }
+}
+@mixin svgTransitionFast() {
+   path, line, polygon, circle, rect, ellipse, polyline, text {
+      @include transitionStandardFast();
+   }
+}
+@mixin svgTransitionSlow() {
+   path, line, polygon, circle, rect, ellipse, polyline, text {
+      @include transitionStandardSlow();
+   }
+}
+@mixin svgColorStroke($color) {
+   path, line, polygon, circle, rect, ellipse, polyline, text {
+      stroke: $color;
+   }
+}
+@mixin svgColorFill($color) {
+   path, line, polygon, circle, rect, ellipse, polyline, text {
+      fill: $color;
+   }
+}
+
+@-webkit-keyframes width0to100 {
+  0%   { width: 0; }
+  100% { width: 100%; }
+}
+@-moz-keyframes width0to100 {
+  0%   { width: 0; }
+  100% { width: 100%; }
+}
+@-o-keyframes width0to100 {
+  0%   { width: 0; }
+  100% { width: 100%; }
+}
+@keyframes width0to100 {
+  0%   { width: 0; }
+  100% { width: 100%; }
+}
+@mixin afterAlignMiddle() {
+   &:after {
+      content: '';
+      position: relative;
+      height: 100%;
+      display: inline-block;
+      vertical-align: middle;
+   }
+}

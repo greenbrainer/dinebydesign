@@ -1,0 +1,62 @@
+<div class="violetBg">
+   <div class="wrapper1140">
+      <section class="information bottomContact">
+         <h1>Contact</h1>
+         <div class="excerpt clearfix">
+            <% if $SiteConfig.PhoneNumber %>
+            <div class="excerptRow">
+               <h3>telephone:</h3>
+               <a href="tel:$SiteConfig.PhoneNumber">$SiteConfig.PhoneNumber</a>
+            </div>
+            <% end_if %>
+            <% if $SiteConfig.Email %>
+            <div class="excerptRow">
+               <h3>e-mail:</h3>
+               <a href="mailto:$SiteConfig.Email">$SiteConfig.Email</a>
+            </div>
+            <% end_if %>
+         </div>
+      </section>
+   </div>
+</div>
+
+<div class="rightVioletBg">
+   <div class="bgWrapper"></div>
+   <div class="wrapper1220 clearfix">
+      <div class="clearfix">
+         <section class="contentSide">
+            $Content
+            <div class="clearfix"></div>
+            <h2>Find us</h2>
+            <div class="map">
+               <div class="jsContactMap" style="height: 100%;" data-lat="52.2793845" data-lng="-0.8753513" data-zoom="15"></div>
+            </div>
+         </section>
+         <div class="sidebar">
+            <div class="orangeBox contactForm">
+               <h2>Fill in the form</h2>
+               <h3>and we will call you back</h3>
+               <div class="contact">
+                  $Form
+                  <!-- <form action="#" method="post" class="clearfix">
+                     <input type="text" name="text" placeholder="name" required>
+                     <input type="email" name="email" placeholder="email" required>
+                     <input type="text" name="phone" placeholder="phone" required>
+                     <input type="text" name="call_back_when" placeholder="call back when?" required>
+                     <input type="text" name="subject" placeholder="subject" required>
+                     <textarea name="message" placeholder="message"></textarea>
+                     <input type="submit" value="send message">
+                  </form> -->
+               </div>
+               <h2>online brochure</h2>
+               <div class="brochure clearfix">
+                  <ul>
+                     <li><a href="#"><img src="$themeDir/images/newsletter_eye.svg" alt="" class="svg"><span>view online</span></a></li>
+                     <li><a href="#"><img src="$themeDir/images/newsletter_docs.svg" alt="" class="svg"><span>download .pdf</span></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

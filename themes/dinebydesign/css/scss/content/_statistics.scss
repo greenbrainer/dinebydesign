@@ -1,0 +1,193 @@
+.statisticsBoxesHeader {
+   margin-bottom: -$padding10;
+   h2 {
+      font-family: 'Blender Pro Heavy';
+      font-size: $font35;
+      color: $color2;
+      margin: $padding20 0 0 $padding40;
+   }
+}
+.statisticsBox {
+   float: left;
+   position: relative;
+   width: 25%;
+   height: 488px;
+   background-color: $color9;
+   background-image: url(../images/bg_statistics_empty.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 100px $padding40 $padding40 $padding40;
+   border-right: 1px solid $color10;
+   text-align: center;
+   color: $white;
+   @include transitionStandard();
+   &:last-child {
+      border-right: 0;
+   }
+   &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -7px;
+      width: 0;
+      height: 0;
+      border-bottom: 7px solid $white;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      opacity: 0;
+      @include transitionStandard();
+   }
+   .icon {
+      height: 105px;
+      margin-bottom: $padding30;
+      &:after {
+         content: '';
+         height: 100%;
+         display: inline-block;
+         vertical-align: bottom;
+      }
+      .svg {
+         @include transitionStandardUltraSlow();
+         @include svgColorStroke($color11);
+         @include svgTransition();
+      }
+   }
+   .counter {
+      font-family: 'Intro Black';
+      font-size: $font60;
+   }
+   .benefit {
+      font-family: 'Blender Pro Bold';
+      font-size: $font35;
+      text-transform: uppercase;
+   }
+   p {
+      font-style: italic;
+      font-size: $font20;
+      line-height: 1.3;
+      margin-top: $padding15;
+   }
+   &:hover {
+      .icon {
+         .svg {
+            @include transform(scale(1.1));
+            @include svgColorStroke($white);
+         }
+      }
+      &:after {
+         opacity: 1;
+      }
+      &.money {
+         background-image: url(../images/statistics/bg_1.png);
+      }
+      &.trash {
+         background-image: url(../images/statistics/bg_2.png);
+      }
+      &.cook {
+         background-image: url(../images/statistics/bg_3.png);
+      }
+      &.ecology {
+         background-image: url(../images/statistics/bg_4.png);
+      }
+   }
+   .odometer.odometer-auto-theme, .odometer.odometer-theme-default {
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      *zoom: 1;
+      *display: inline;
+      position: relative;
+   }
+   .odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-default .odometer-digit {
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      *zoom: 1;
+      *display: inline;
+      position: relative;
+   }
+   .odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer, .odometer.odometer-theme-default .odometer-digit .odometer-digit-spacer {
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      *zoom: 1;
+      *display: inline;
+      visibility: hidden;
+   }
+   .odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-default .odometer-digit .odometer-digit-inner {
+      text-align: left;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+   }
+   .odometer.odometer-auto-theme .odometer-digit .odometer-ribbon, .odometer.odometer-theme-default .odometer-digit .odometer-ribbon {
+      display: block;
+   }
+   .odometer.odometer-auto-theme .odometer-digit .odometer-ribbon-inner, .odometer.odometer-theme-default .odometer-digit .odometer-ribbon-inner {
+      display: block;
+      -webkit-backface-visibility: hidden;
+   }
+   .odometer.odometer-auto-theme .odometer-digit .odometer-value, .odometer.odometer-theme-default .odometer-digit .odometer-value {
+      display: block;
+      -webkit-transform: translateZ(0);
+   }
+   .odometer.odometer-auto-theme .odometer-digit .odometer-value.odometer-last-value, .odometer.odometer-theme-default .odometer-digit .odometer-value.odometer-last-value {
+      position: absolute;
+   }
+   .odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-up .odometer-ribbon-inner {
+      -webkit-transition: -webkit-transform 2s;
+      -moz-transition: -moz-transform 2s;
+      -ms-transition: -ms-transform 2s;
+      -o-transition: -o-transform 2s;
+      transition: transform 2s;
+   }
+   .odometer.odometer-auto-theme.odometer-animating-up.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-up.odometer-animating .odometer-ribbon-inner {
+      -webkit-transform: translateY(-100%);
+      -moz-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+      -o-transform: translateY(-100%);
+      transform: translateY(-100%);
+   }
+   .odometer.odometer-auto-theme.odometer-animating-down .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-down .odometer-ribbon-inner {
+      -webkit-transform: translateY(-100%);
+      -moz-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+      -o-transform: translateY(-100%);
+      transform: translateY(-100%);
+   }
+   .odometer.odometer-auto-theme.odometer-animating-down.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
+      -webkit-transition: -webkit-transform 2s;
+      -moz-transition: -moz-transform 2s;
+      -ms-transition: -ms-transform 2s;
+      -o-transition: -o-transform 2s;
+      transition: transform 2s;
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      transform: translateY(0);
+   }
+}
+.page {
+   .statisticsBox {
+      .icon {
+         .svg {
+            @include svgColorStroke($color4);
+         }
+      }
+      &:hover {
+         background: $color9 url(../images/bg_statistics_empty.png) no-repeat;
+         .icon {
+            .svg {
+               @include svgColorStroke($color22);
+            }
+         }
+      }
+   }
+}

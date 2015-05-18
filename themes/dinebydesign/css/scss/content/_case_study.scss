@@ -1,0 +1,100 @@
+.caseStudiesVioletBg {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 302px;
+   background-color: $color2;
+}
+.caseStudiesBoxesHeader {
+   h2 {
+      font-family: 'Blender Pro Heavy';
+      font-size: $font35;
+      color: $color2;
+      margin: $padding20 0 $padding40 $padding40;
+   }
+}
+.caseStudiesBoxesWrapper {
+   padding-bottom: $padding20;
+   position: relative;
+   .caseStudyBox {
+      float: left;
+      width: 49%;
+      margin-bottom: $padding50;
+      background-color: $white;
+      @include transitionStandard();
+      &:nth-child(odd) {
+         margin-right: 2%;
+      }
+      &:hover {
+         background-color: $color20;
+         .image {
+            &:after {
+               border-bottom: 20px solid $color20;
+            }
+         }
+      }
+      .image {
+         position: relative;
+         max-height: 302px; 
+         overflow: hidden;
+         &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 40px;
+            width: 0;
+            height: 0;
+            border-bottom: 20px solid $white;
+            border-right: 20px solid transparent;
+            @include transitionStandard();
+         }
+         a, a:visited {
+            img {
+               width: 100%;
+               height: auto;
+               display: block;
+               @include transitionStandardUltraSlow();
+            }
+         }
+         a:hover {
+            img {
+               @include transform(scale(1.1));
+            }
+         }
+      }
+      .content {
+         width: 100%;
+         padding: $padding40;
+         border-bottom: 2px solid $color13;
+         h3 {
+            margin-bottom: $padding20;
+            a, a:visited {
+               font-family: 'Blender Pro Heavy';
+               font-size: $font26;
+               color: $color2;
+               @include transitionStandardFast();
+               &:hover {
+                  color: $color4;
+               }
+            }
+         }
+         p {
+            font-size: $font17;
+            margin-bottom: $padding20;
+            line-height: 1.5;
+         }
+         .date {
+            color: $color17;
+         }
+      }
+   }
+}
+.page {
+   .caseStudiesBoxesWrapper {
+      .caseStudyBox {
+         margin-bottom: 0;
+      }
+   }
+}

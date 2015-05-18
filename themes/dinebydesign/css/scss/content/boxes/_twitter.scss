@@ -1,0 +1,124 @@
+.twitterBox {
+   float: right;
+   width: 32.8%;
+   padding: $padding50 $padding40 $padding40 $padding40;
+   h2 {
+      .twitterIcon {
+         display: block;
+         float: right;
+         .svg {
+            width: 26px;
+            height: 21px;
+            @include svgColorFill($color16);
+         }
+      }
+   }
+   .items {
+      .item {
+         .date {
+            font-family: 'Ubuntu Medium';
+            text-transform: uppercase;
+            color: $color15;
+         }
+         .author {
+            font-family: 'Ubuntu Medium';
+            font-size: 18px;
+            margin-top: 5px;
+         }
+         .content {
+            margin-top: $padding25;
+            line-height: 1.5;
+            font-size: $font17;
+         }
+      }
+      .bx-controls {
+         display: block;
+         position: relative;
+         width: 100%;
+         .bx-pager {
+            display: none;
+         }
+         .bx-controls-direction {
+            position: relative;
+            font-size: 0;
+            margin-top: 58px;
+            a {
+               font-size: 0;
+               display: inline-block;
+               position: relative;
+               width: 100px;
+               height: 45px;
+               border: 1px solid $color14;
+            }
+            .bx-prev {
+               &:before {
+                  content: '';
+                  display: block;
+                  position: absolute;
+                  top: 15px;
+                  left: 25px;
+                  width: 0;
+                  height: 0;
+                  border-right: 6px solid $white;
+                  border-top: 6px solid transparent;
+                  border-bottom: 6px solid transparent;
+                  @include transitionStandard();
+               }
+               &:after {
+                  content: '';
+                  display: block;
+                  position: absolute;
+                  top: 17px;
+                  left: 27px;
+                  width: 0;
+                  height: 0;
+                  border-right: 4px solid $color4;
+                  border-top: 4px solid transparent;
+                  border-bottom: 4px solid transparent;
+                  @include transitionStandard();
+               }
+               &:hover {
+                  &:before, &:after {
+                     @include transform(translate(-6px, 0));
+                  }
+               }
+            }
+            .bx-next {
+               border-left: 0;
+               @include transitionStandard();
+               &:before {
+                  content: '';
+                  display: block;
+                  position: absolute;
+                  top: 15px;
+                  right: 25px;
+                  width: 0;
+                  height: 0;
+                  border-left: 6px solid $white;
+                  border-top: 6px solid transparent;
+                  border-bottom: 6px solid transparent;
+                  @include transitionStandard();
+               }
+               &:after {
+                  content: '';
+                  display: block;
+                  position: absolute;
+                  top: 17px;
+                  right: 27px;
+                  width: 0;
+                  height: 0;
+                  border-left: 4px solid $color4;
+                  border-top: 4px solid transparent;
+                  border-bottom: 4px solid transparent;
+                  @include transitionStandard();
+               }
+               &:hover {
+                  &:before, &:after {
+                     @include transform(translate(6px, 0));
+                  }
+               }
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,104 @@
+.membersHeader {
+   h2 {
+      font-family: 'Blender Pro Heavy';
+      font-size: $font35;
+      color: $color2;
+      margin: $padding65 0 0 $padding40;
+   }
+}
+.membersWrapper {
+   padding: 190px 0 100px 0;
+   .member {
+      float: left;
+      width: 32.5%;
+      margin-right: 1.25%;
+      background-color: $color9;
+      color: $white;
+      @include transitionStandardSlow();
+      &:last-child {
+         margin-right: 0;
+      }
+      &:hover {
+         .image {
+            div {
+               @include transform(rotate(0deg));
+               img {
+                  @include transform(rotate(-0deg));
+               }
+            }
+         }
+      }
+      .image {
+         margin: -96px auto 0 auto;
+         width: 191px;
+         height: 191px;
+         div {
+            position: relative;
+            padding: 5px;
+            @include transform(rotate(-180deg));
+            @include transitionStandardSlow();
+            img {
+               position: relative;
+               z-index: 2;
+               display: block;
+               width: 181px;
+               height: 181px;
+               @include border-radius(50%);
+               @include transform(rotate(180deg));
+               @include transitionStandardSlow();
+            }
+            &:after {
+               content: '';
+               position: absolute;
+               top: 0;
+               left: 0;
+               background-color: $white;
+               width: 191px;
+               height: 95px;
+               border-top-left-radius: 95px;
+               border-top-right-radius: 95px;
+            }
+         }
+      }
+      .name {
+         font-family: 'Iowan Old Style Roman';
+         font-size: $font30;
+         margin: $padding40 $padding40 $padding10 $padding40;
+      }
+      .position {
+         font-family: 'Ubuntu Medium';
+         font-size: $font18;
+         text-transform: uppercase;
+         color: $color4;
+         margin: 0 $padding40 $padding20 $padding40;
+      }
+      p {
+         font-size: $font17;
+         line-height: 1.5;
+         margin: 0 $padding40 $padding35 $padding40;
+      }
+      ul {
+         li {
+            border-bottom: 1px solid $color24;
+            a, a:visited {
+               background-color: $color23;
+               color: $white;
+               display: block;
+               height: 90px;
+               line-height: 90px;
+               padding: 0 $padding20 0 $padding40;
+               white-space: nowrap;
+               overflow: hidden;
+               text-overflow: ellipsis;
+               @include transitionStandardFast();
+               span {
+                  color: $color4;
+               }
+               &:hover {
+                  background-color: $color25;
+               }
+            }
+         }
+      }
+   }
+}

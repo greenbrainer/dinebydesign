@@ -1,0 +1,22 @@
+header {
+   .call {
+      float: right;
+      color: $color2;
+      font-family: 'Ubuntu Medium';
+      text-transform: uppercase;
+      text-align: right;
+      position: relative;
+      .content {
+         padding: $padding35 0 31px 0;
+         display: inline-block;
+         padding-right: $padding15;
+      }
+      .phoneIcon {
+         width: 25px;
+         height: 42px;
+         fill: $color2;
+         position: relative;
+         top: 16px;
+      }
+   }
+}

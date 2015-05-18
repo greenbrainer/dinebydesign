@@ -1,0 +1,8 @@
+---
+Name: opengraphsettings
+---
+OpenGraph:
+  application_id: 'SiteConfig'
+  admin_id: 'SiteConfig'
+  default_locale: 'en_US'
+  default_tagbuilder: 'OpenGraphBuilder'

@@ -1,0 +1,37 @@
+header {
+   .social {
+      float: left;
+      vertical-align: top;
+      ul {
+         border-bottom: 1px solid rgba(194, 194, 194, 0.5);
+         border-left: 1px solid rgba(194, 194, 194, 0.5);
+         font-size: 0;
+         li {
+            display: inline-block;
+            border-right: 1px solid rgba(194, 194, 194, 0.5);
+            a, a:visited {
+               display: block;
+               width: 58px;
+               height: 68px;
+               line-height: 68px;
+               text-align: center;
+               position: relative;
+               top: 4px;
+               @include transitionStandard();
+               .svg {
+                  display: inline-block;
+                  width: 18px;
+                  height: 15px;
+                  @include svgTransition();
+               }
+               &:hover {
+                  @include transform(translate(0, -4px));
+                  .svg {
+                     @include svgColorFill($color4);
+                  }
+               }
+            }
+         }
+      }
+   }
+}

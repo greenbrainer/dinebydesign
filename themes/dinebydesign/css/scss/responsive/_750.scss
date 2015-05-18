@@ -1,0 +1,284 @@
+.page {
+   padding-top: 0;
+}
+header {
+   position: relative;
+   background: $white;
+   text-align: center;
+   &>.wrapper1140 {
+      padding: 0;
+   }
+   .headerTop {
+      position: relative;
+      z-index: 10;
+      background-color: $white;
+   }
+   .logo {
+      padding: $padding25 $padding10;
+   }
+   .mobileMenuButton {
+      display: block;
+   }
+   .social {
+      display: none;
+   }
+   .search {
+      display: none;
+      float: none;
+      position: absolute;
+      top: 96px;
+      left: 10%;
+      width: 80%;
+      z-index: 9;
+      margin: 0 auto;
+      input[type="text"] {
+         width: 100%;
+         padding: 0 $padding20;
+      }
+      input[type="submit"] {
+         bottom: $padding25;
+      }
+   }
+   .headerBottom {
+      display: none;
+      position: absolute;
+      top: 96px;
+      left: 0;
+      background-color: $white;
+      width: 100%;
+      height: auto;
+      padding-top: $padding5;
+      @include box-shadow(rgba(0, 0, 0, 0.3) 0px 0px 9px);
+   }
+   .menu {
+      float: none;
+      display: inline-block;
+      padding-bottom: $padding15;
+      margin-top: 66px;
+      ul {
+         li {
+            display: block;
+            padding: 0 $padding20 $padding20 $padding20;
+            margin: 0;
+         }
+      }
+      .submenu {
+         position: static;
+         li {
+            &:last-child {
+               padding-bottom: 0;
+            }
+         }
+      }
+   }
+}
+.intro {
+   .backgroundVideo {
+      position: relative;
+   }
+   .videoContainer {
+      display: none;
+   }
+   .content {
+      display: block;
+      width: 100%;
+      position: absolute;
+   }
+   .scrollDown {
+      display: none;
+   }
+   .videoControl {
+      display: none;
+   }
+   &:after {
+      display: block;
+   }
+}
+.whiteBox h2 {
+   font-size: $font30;
+}
+.tabs {
+   .tabsHeader .tab {
+      font-size: $font16;
+   }
+   .tabsContent .content p {
+      font-size: $font15;
+   }
+}
+.servicesBox {
+   padding: $padding40 $padding30 $padding30 $padding30;
+   .content {
+      text-align: center;
+      p {
+         text-align: left;
+      }
+   }
+}
+.twitterBox {
+   display: none;
+   padding: $padding40 $padding30 $padding30 $padding30;
+   .items .item {
+      .date {
+         font-size: $font15;
+      }
+      .author {
+         font-size: $font16;
+      }
+      .content {
+         font-size: $font15;
+      }
+   }
+}
+.slider {
+   .slide {
+      .content {
+         p {
+            display: block;
+            max-height: 100%;
+            font-size: $font15;
+         }
+      }
+   }
+}
+.newsletterBox {
+   padding: $padding40 $padding30 $padding30 $padding30;
+}
+.orangeBox h2 {
+   font-size: $font30;
+}
+.designedBox {
+   padding: $padding40 $padding30 $padding30 $padding30;
+   .content {
+      max-width: 100%;
+      text-align: center;
+      h3, h4, p {
+         text-align: left;
+      }
+      h3 {
+         font-size: $font16;
+      }
+      h4 {
+         font-size: $font26;
+      }
+      p {
+         font-size: $font15;
+      }
+   }
+}
+.testimonials {
+   h2 {
+      font-size: $font30;
+   }
+   .testimonialsWrapper .testimonial .content {
+      .name {
+         font-size: $font26;
+      }
+      .company {
+         font-size: $font16;
+      }
+      p {
+         font-size: $font15;
+      }
+   }
+}
+.articleBox {
+   .play {
+      display: none;
+   }
+   .content {
+      p {
+         display: none;
+      }
+   }
+}
+footer {
+   font-size: 14px;
+   .menus ul li a, .menus ul li a:visited {
+      font-size: $font15;
+      &.big {
+         font-size: $font15;
+      }
+   }
+}
+.information {
+   h1 {
+      font-size: $font40;
+   }
+   .excerpt {
+      font-size: $font30;
+      .excerptRow {
+         h3 {
+            font-size: $font22;
+         }
+         a, a:visited {
+            font-size: $font24;
+         }
+      }
+   }
+   p {
+      font-size: $font16;
+   }
+   .articleInfo .social {
+      font-size: $font17;
+   }
+}
+.information.bottomMinus h1 {
+   font-size: $font40;
+}
+.contentSide {
+   h2 {
+      font-size: $font30;
+   }
+   p {
+      font-size: $font15;
+   }
+}
+.statisticsBoxesHeader h2 {
+   font-size: $font30;
+}
+.membersHeader h2 {
+   font-size: $font30;
+}
+.membersWrapper .member {
+   .name {
+      font-size: $font26;
+   }
+   .position {
+      font-size: $font16;
+   }
+   p {
+      font-size: $font15;
+   }
+}
+.articleBox .content h3 a, .articleBox .content h3 a:visited {
+   font-size: $font30;
+}
+.sidebar {
+   .categoriesBox {
+      padding-top: 0;
+      h2 {
+         font-size: $font30;
+      }
+      ul li a, ul li a:visited {
+         font-size: $font16;
+      }
+   }
+   .contactForm {
+        padding: $padding40 $padding30 $padding30 $padding30;
+   }
+   .requestBox {
+      padding: $padding30;
+   }
+}
+.caseStudiesBoxesWrapper .caseStudyBox .content {
+   padding: $padding30;
+   h3 a, h3 a:visited {
+      font-size: $font22;
+   }
+   p {
+      font-size: $font15;
+   }
+   .date {
+      font-size: $font15;
+   }
+}

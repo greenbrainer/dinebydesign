@@ -1,0 +1,19 @@
+.statisticsBox {
+   .counter {
+      font-size: 40px;
+   }
+   p {
+      font-size: $font16;
+      line-height: 1.4;
+   }
+}
+.information {
+   padding: $padding40 0 $padding50 0;
+   h1 {
+      font-size: 50px;
+      margin-bottom: $padding30;
+   }
+   .slogan {
+      font-size: $font35;
+   }
+}

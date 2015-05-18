@@ -1,0 +1,27 @@
+.wrapper1220 {
+   max-width: 100%;
+   padding: 0 10px;
+}
+.intro {
+   .content {
+      bottom: 25%;
+      h1 {
+         font-size: 50px;
+      }
+      p {
+         margin: 10px 0 25px 0;
+         font-size: $font16;
+      }
+   }
+}
+.caseStudiesVioletBg {
+   display: none;
+}
+.caseStudiesBoxesWrapper {
+   padding-top: $padding40;
+}
+.caseStudiesBoxesHeader {
+   h2 {
+      margin-bottom: 0;
+   }
+}

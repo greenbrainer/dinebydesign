@@ -1,0 +1,22 @@
+.slide {
+   .content {
+      h2 {
+         margin-bottom: $padding20;
+      }
+      p {
+         display: none;
+      }
+   }
+}
+.testimonials {
+   &:before {
+      display: none;
+   }
+   .testimonialsWrapper {
+      .testimonial {
+         .content {
+            max-width: 60%;
+         }
+      }
+   }
+}

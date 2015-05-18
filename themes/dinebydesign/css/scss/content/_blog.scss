@@ -1,0 +1,105 @@
+.blog {
+   float: left;
+   width: 66%;
+   padding: $padding40 $padding40 $padding40 0;
+}
+.articleBox {
+   position: relative;
+   width: 100%;
+   margin-bottom: $padding40;
+   color: $white;
+   @include opacity(1);
+   @include transitionStandard();
+   &:hover {
+      @include opacity(.9);
+   }
+   .image {
+      width: 100%;
+      height: auto;
+   }
+   .content {
+      width: 100%;
+      position: absolute;
+      padding: $padding20 $padding40 $padding20 $padding40;
+      left: 0;
+      bottom: 20px;
+      z-index: 2;
+      a, a:visited {
+         color: $white;
+         @include transitionStandardFast();
+         &:hover {
+            color: $color4;
+         }
+      }
+      .meta {
+         margin-bottom: $padding30;
+      }
+      .play {
+         text-align: center;
+         padding: $padding20 0 $padding50 0;
+         a, a:visited {
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            background: url(../images/play.svg) no-repeat top left;
+            background-size: contain;
+            @include opacity(1);
+            @include transitionStandard();
+            &:hover {
+               @include opacity(.7);
+            }
+         }
+      }
+      h3 {
+         a, a:visited {
+            font-family: 'Blender Pro Heavy';
+            font-size: $font35;
+         }
+      }
+      p {
+         margin-top: $padding20;
+         line-height: 1.5;
+         font-size: $font17;
+      }
+   }
+   &.noImage {
+      background-color: $color7;
+      color: $color3;
+      .ratio {
+         width: 780px;
+         height: auto;
+         max-width: 100%;
+         max-height: 100%;
+      }
+      .content {
+         a, a:visited {
+            color: $color4;
+            @include transitionStandardFast();
+            &:hover {
+               color: $color2;
+            }
+         }
+      }
+   }
+}
+.mainArticleBox {
+   margin: $padding40 0 0 0;
+   &:hover {
+      @include opacity(1);
+   }
+   .content {
+      padding: 180px $padding40 $padding80 $padding40;
+      .meta {
+         margin-bottom: $padding50;
+      }
+      h3 {
+         a, a:visited {
+            font-size: $font45;
+         }
+      }
+      p {
+         margin-top: $padding40;
+         max-width: 730px;
+      }
+   }
+}

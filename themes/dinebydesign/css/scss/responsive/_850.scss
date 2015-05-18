@@ -1,0 +1,24 @@
+.intro {
+   .content {
+      bottom: 17%;
+      h1 {
+         font-size: 30px;
+      }
+      p {
+         margin: 0 0 10px 0;
+      }
+   }
+}
+.information {
+   .excerpt {
+      .excerptRow {
+         float: none;
+         width: 100%;
+         margin-bottom: $padding20;
+         word-break: break-word;
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+   }
+}

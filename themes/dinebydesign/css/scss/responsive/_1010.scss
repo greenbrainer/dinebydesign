@@ -1,0 +1,165 @@
+header {
+   .request, .call {
+      display: none;
+   }
+}
+.intro {
+   .content {
+      bottom: 18%;
+      h1 {
+         font-size: 40px;
+      }
+   }
+   .scrollDown {
+      bottom: 3%;
+      .scroll {
+         margin-top: 10px;
+      }
+   }
+   .videoControl {
+      position: absolute;
+      right: 2%;
+      bottom: 2%;
+   }
+}
+.servicesBox {
+   float: none;
+   width: 100%;
+   margin-bottom: $padding50;
+}
+.twitterBox {
+   float: none;
+   width: 100%;
+}
+.newsletterBox {
+   float: none;
+   width: 100%;
+   margin-bottom: $padding50;
+}
+.designedBox {
+   float: none;
+   width: 100%;
+}
+.information {
+   &.bottomMinus {
+      padding-bottom: $padding25;
+      margin-bottom: 0;
+   }
+   .articleInfo {
+      .meta {
+         float: none;
+      }
+      .social {
+         float: none;
+      }
+   }
+}
+.contentSide {
+   float: none;
+   width: 100%;
+   padding: $padding40 0 $padding40 0;
+}
+.blog {
+   float: none;
+   width: 100%;
+   padding-right: 0;
+}
+.mainArticleBox {
+   margin-top: 0 0 $padding40 0;
+   &:hover {
+      @include opacity(.9);
+   }
+   .content {
+      padding: $padding20 $padding40 $padding20 $padding40;
+      .meta {
+         margin-bottom: $padding30;
+      }
+      h3 {
+         a, a:visited {
+            font-size: $font35;
+         }
+      }
+      p {
+         margin-top: $padding20;
+         max-width: 100%;
+      }
+   }
+}
+.sidebar {
+   float: none;
+   width: 100%;
+   .categoriesBox {
+      padding: $padding40 0 $padding50 0;
+   }
+   .newsletterBox {
+      padding-top: $padding50;
+   }
+   .requestBox {
+      margin: -$padding50 0 $padding50 0;
+   }
+}
+.rightGrayBg, .rightOrangeBg, .rightVioletBg {
+   .bgWrapper {
+      display: none;
+   }
+}
+.membersHeader {
+   h2 {
+      margin-top: $padding50;
+   }
+}
+.membersWrapper {
+   padding: $padding40 0 $padding40 0;
+   .member {
+      float: none;
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: $padding40;
+      .image {
+         margin: 0 auto;
+      }
+      &:last-child {
+         margin-bottom: 0;
+      }
+   }
+}
+.tabs {
+   .tabsHeader {
+      .tab {
+         display: block;
+         float: left;
+         width: 33.3%;
+         max-width: 33.3%;
+         margin-right: 0;
+         word-wrap: break-word;
+      }
+   }
+}
+.gallery {
+   h2 {
+      padding-left: 0;
+   }
+   .bx-controls {
+      right: 0;
+   }
+}
+.caseStudiesBoxesHeader {
+   h2 {
+      margin-left: 0;
+   }
+}
+.statisticsBoxesHeader {
+   h2 {
+      margin: 0;
+   }
+}
+footer {
+   .menus {
+      float: none;
+   }
+   .contact {
+      margin-top: 0;
+      float: none;
+      text-align: left;
+   }
+}

@@ -1,0 +1,19 @@
+header {
+   .logo {
+      float: left;
+      padding-top: 23px;
+      a, a:visited {
+         display: block;
+         width: 331px;
+         height: 46px;
+         background: url(../images/logo.png) no-repeat top left;
+         background-size: contain;
+         font-size: 0;
+         text-transform: uppercase;
+         @include transitionStandard();
+      }
+      a:hover {
+         @include opacity(.7);
+      }
+   }
+}

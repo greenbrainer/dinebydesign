@@ -1,0 +1,32 @@
+footer {
+   .contact {
+      margin: $padding35 0;
+      float: right;
+      color: $color2;
+      text-align: right;
+      a, a:visited {
+         color: $color2;
+         @include transitionStandardFast();
+      }
+      a:hover {
+         color: $color4;
+      }
+      .telephone {
+         a, a:visited {
+            font-weight: bold;
+         }
+      }
+      .email {
+         margin: $padding10 0;
+      }
+      .phoneIcon {
+         margin-top: $padding30;
+         display: inline-block;
+         .svg {
+            width: 25px;
+            height: 42px;
+            @include svgColorStroke($color8);
+         }
+      }
+   }
+}

@@ -1,0 +1,73 @@
+$white: #fff;
+$black: #000;
+
+$color1: #e4e5e5; // szary
+$color2: #60266b; // fioletowy podstawowy
+$color3: #686a71; // szary podstawowy (fonty itd.)
+$color4: #fb6703; // pomarańczowy podstawowy
+$color5: #c2c2c2; // jeden z ciemno szarych
+$color6: #e1e2e5; // jeden z szarych
+$color7: #f2f2f2; // jeden z szarych
+$color8: #bbbdc0; // jeden z szarych
+$color9: #562260; // ciemny fiolet
+$color10: #4b1954; // bardzo ciemny fiolet
+$color11: #784e80; // jasny fiolet
+$color12: #ececec; // jeden z szarych
+$color13: #e4e4e6; // jeden z szarych
+$color14: #dc5a18; // ciemny pomaranczowy
+$color15: #b84d1e; // ciemny pomarańczowy 2
+$color16: #d95a11; // ciemny pomarańczowy 3
+$color17: #bababa; // jeden z szarych
+$color18: #5a5b5f; // jeden z ciemno szarych
+$color19: #e4e4e4; // jeden z szarych
+$color20: #f7f7f8; // szary, mocno jasny
+$color21: #805189; // jeden z fioletowych
+$color22: #ffa466; // jasny pomaranczowy
+$color23: #5b2465; // jeden z fioletowych
+$color24: #4f1a58; // ciemny fioletowy
+$color25: #511f5b; // ciemny filotetowy
+
+$padding5: 5px;
+$padding10: 10px;
+$padding15: 15px;
+$padding20: 20px;
+$padding25: 25px;
+$padding30: 30px;
+$padding35: 35px;
+$padding40: 40px;
+$padding50: 50px;
+$padding60: 60px;
+$padding65: 65px;
+$padding70: 70px;
+$padding75: 75px;
+$padding80: 80px;
+
+$font11: 11px;
+$font14: 14px;
+$font15: 15px;
+$font16: 16px;
+$font17: 17px;
+$font18: 18px;
+$font19: 19px;
+$font20: 20px;
+$font22: 22px;
+$font24: 24px;
+$font25: 25px;
+$font26: 26px;
+$font30: 30px;
+$font34: 34px;
+$font35: 35px;
+$font40: 40px;
+$font45: 45px;
+$font65: 65px;
+$font60: 60px;
+
+@mixin default-font() {
+   font-family: Lato, Helvetica, Arial;
+   font-size: $font16;
+   font-weight: normal;
+   font-style: normal;
+   color: $color3;
+   line-height: 1;
+   letter-spacing: normal;
+}

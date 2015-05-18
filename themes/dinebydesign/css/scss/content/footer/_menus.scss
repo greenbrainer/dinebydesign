@@ -1,0 +1,30 @@
+footer {
+   .menus {
+      padding: $padding35 0;
+      float: left;
+      ul {
+         float: left;
+         margin-right: $padding40;
+         li {
+            line-height: 30px;
+            a, a:visited {
+               @include transitionStandardFast();
+               &.big {
+                  font-family: 'Ubuntu Medium';
+                  color: $color2;
+                  text-transform: uppercase;
+               }
+            }
+            a:hover {
+               color: $color4;
+               &.big {
+                  color: $color4;
+               }
+            }
+         }
+         &:last-child {
+            margin-right: 0;
+         }
+      }
+   }
+}

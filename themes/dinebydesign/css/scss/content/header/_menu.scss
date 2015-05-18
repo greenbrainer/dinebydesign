@@ -1,0 +1,64 @@
+header {
+   .menu {
+      float: left;
+      padding: $padding35 0;
+      ul {
+         li {
+            display: inline-block;
+            margin-right: $padding40;
+            position: relative;
+            &:last-child {
+               margin-right: 0;
+            }
+            a, a:visited {
+               color: $color2;
+               font-family: 'Ubuntu Medium';
+               text-transform: uppercase;
+               @include transitionStandardFast();
+               .more {
+                  display: inline-block;
+                  position: relative;
+                  width: 16px;
+                  height: 11px;
+                  background: url(../images/menu_arrow_down.png) no-repeat center center;
+                  vertical-align: middle;
+                  margin-left: $padding10;
+                  cursor: pointer;
+                  @include transitionStandard();
+                  &:hover {
+                     background-position: center bottom;
+                  }
+                  &.active {
+                      background-image: url(../images/menu_arrow_up.png);
+                  }
+               }
+               &:hover {
+                  color: $color4;
+                  .more {
+                     background-position: center bottom;
+                  }
+               }
+            }
+         }
+      }
+      .submenu {
+         width: 100%;
+         display: none;
+         position: absolute;
+         top: 51px;
+         left: 0;
+         background: $white;
+         li {
+            margin-right: 0;
+            display: block;
+            padding: $padding10 $padding15;
+            &:first-child {
+               padding-top: $padding20;
+            }
+            &:last-child {
+               padding-bottom: $padding20;
+            }
+         }
+      }
+   }
+}

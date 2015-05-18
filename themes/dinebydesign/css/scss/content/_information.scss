@@ -1,0 +1,195 @@
+.information {
+   padding: $padding70 0 $padding70 0;
+   h1 {
+      font-family: 'Blender Pro Heavy';
+      font-size: $font65;
+      color: $white;
+      margin-bottom: $padding50;
+   }
+   .excerpt {
+      font-family: 'Blender Pro Book';
+      font-size: $font45;
+      color: $color4;
+      /*padding-bottom: $padding40;
+      border-bottom: 1px solid $color4;
+      margin-bottom: $padding35;*/
+      .excerptRow {
+         float: left;
+         width: 33.332%;
+         h3 {
+            font-size: $font24;
+            color: $white;
+            text-transform: uppercase;
+         }
+         a, a:visited {
+            font-family: 'Blender Pro Book';
+            font-size: $font34;
+            color: $color4;
+            @include transitionStandardFast();
+            &:hover {
+               color: $color14;
+            }
+         }
+      }
+   }
+   p {
+      font-size: $font20;
+      color: $white;
+      line-height: 1.5;
+   }
+   .pages {
+      padding-top: $padding10;
+      height: 36px;
+      margin-bottom: $padding20;
+      .pagesCount {
+         display: inline-block;
+         font-family: 'Iowan Old Style Roman';
+         color: $white;
+         font-size: $font25;
+         line-height: 36px;
+         margin: 0 80px;
+         letter-spacing: 8px;
+      }
+      .prev {
+         display: inline-block;
+         position: relative;
+         width: 18px;
+         height: 24px;
+         @include transitionStandard();
+         &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-right: 28px solid $white;
+            border-top: 18px solid transparent;
+            border-bottom: 18px solid transparent;
+         }
+         &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 6px;
+            left: 5px;
+            width: 0;
+            height: 0;
+            border-right: 20px solid $color2;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+         }
+         &:hover {
+            @include transform(translate(-6px, 0));
+         }
+      }
+      .next {
+         display: inline-block;
+         position: relative;
+         width: 18px;
+         height: 24px;
+         @include transitionStandard();
+         &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-left: 28px solid $white;
+            border-top: 18px solid transparent;
+            border-bottom: 18px solid transparent;
+         }
+         &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 6px;
+            right: 5px;
+            width: 0;
+            height: 0;
+            border-left: 20px solid $color2;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+         }
+         &:hover {
+            @include transform(translate(6px, 0));
+         }
+      }
+   }
+   .articleInfo {
+      padding-top: $padding25;
+      margin-bottom: -$padding10;
+      .meta {
+         float: left;
+         color: $white;
+         line-height: 46px;
+         a, a:visited {
+            font-size: $font15;
+            color: $color4;
+            @include transitionStandardFast();
+            &:hover {
+               color: $color14;
+            }
+         }
+      }
+      .social {
+         float: right;
+         color: $white;
+         font-size: $font20;
+         a, a:visited {
+            display: inline-block;
+            background-color: $white;
+            color: $white;
+            width: 140px;
+            height: 46px;
+            line-height: 46px;
+            text-align: center;
+            margin-left: 17px;
+            @include transitionStandard();
+            .svg {
+               margin-right: $padding10;
+               @include svgColorFill($white);
+               @include svgTransition();
+            }
+            &.facebook {
+               background-color: #3b5998;
+               .svg {
+                  width: 8px;
+                  height: 15px;
+               }
+            }
+            &.twitter {
+               background-color: #55acee;
+               .svg {
+                  width: 18px;
+                  height: 14px;
+               }
+
+            }
+            &.linkedin {
+               background-color: #0976b4;
+               .svg {
+                  width: 15px;
+                  height: 14px;
+               }
+            }
+            &:hover {
+               background-color: $color4;
+            }
+         }
+      }
+   }
+   &.bottomMinus {
+      padding-bottom: 370px;
+      margin-bottom: -420px;
+      h1 {
+         font-size: $font45;
+      }
+   }
+   &.bottomContact {
+      padding-bottom: $padding15;
+   }
+}
